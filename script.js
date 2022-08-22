@@ -1,10 +1,7 @@
 //*****************display form data in table******************/
 function displayForm() {
-  let obj = document.getElementById("formtab");
-  if (obj.style.display == "none") {
-    obj.style.display = "block";
-  } else {
-    obj.style.display = "none";
+   let obj = document.getElementById("formtab");
+  obj.style.display == "none" ? obj.style.display = "block" : obj.style.display = "none";
   }
 }
 //*******************increment the rating*********************/
