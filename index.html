@@ -21,72 +21,22 @@
             <div id="formtab" class="acutalform">
                 <div class="form-group">
                 <lable for ="title">Title :</lable>
-                <input class="form-control" type="text" id="title" required />
+                <input class="form-control" type="text" id="title" name='title' required />
                 </div>
                 <div class="form-group">
                 <lable for ="image">Image :</lable>
-                <input class="form-control" type="url" id="image" required />
+                <input class="form-control" type="url" id="image" name='image' required />
                </div>
                <div class="form-group">
               <lable for ="rating">Rating :</lable>
-              <input class="form-control" type="number" max="5" min="1" id="rating" required /></div>
+              <input class="form-control" type="number" max="5" min="1" id="rating" name='rating' required /></div>
               <br />
               <button class="btn btn-sm btn-primary" onclick="addItem()">Save</button>
             </div>
           </form>
         
         <table class="table table-striped" id="tabledata">
-          <tr>
-            <th>Image</th>
-            <th>Name</th>
-            <th>Rating</th>
-            <th>Update</th>
-          </tr>
-          <tr id="item1">
-            <td>
-              <img
-                src="https://m.media-amazon.com/images/M/MV5BMTk3OTM5Njg5M15BMl5BanBnXkFtZTYwMzA0ODI3._V1_UX182_CR0,0,182,268_AL_.jpg"
-              />
-            </td>
-            <td>The Notebook</td>
-            <td>
-              <button onclick="increment(this.value)" value="counter1">
-                👍
-              </button>
-              <span id="counter1">3</span
-              ><button onclick="decrement(this.value)" value="counter1">
-                👎
-              </button>
-            </td>
-            <td>
-              <button onclick="deleteElement(this.value)" value="item1">
-                    <i class="fa fa-trash"></i>
-              </button>
-            </td>
-          </tr>
-
-          <tr id="item2">
-            <td>
-              <img
-                src=  "https://m.media-amazon.com/images/M/MV5BMjMxNjY2MDU1OV5BMl5BanBnXkFtZTgwNzY1MTUwNTM@._V1_.jpg"
-              />
-            </td>
-            <td>Avengers</td>
-            <td>
-              <button onclick="increment(this.value)" value="counter2">
-                👍
-              </button>
-              <span id="counter2">5</span
-              ><button onclick="decrement(this.value)" value="counter2">
-                👎
-              </button>
-            </td>
-            <td>
-              <button  onclick="deleteElement(this.value)" value="item2">
-                 <i class="fa fa-trash"></i>
-              </button>
-            </td>
-          </tr>
+        
         </div>
         </table>
       </div>
