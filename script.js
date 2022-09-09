@@ -60,7 +60,11 @@ function displayForm() {
    let titledata = document.getElementById("title").value;
    let imagedata = document.getElementById("image").value;
    let ratingdata = document.getElementById("rating").value;
-   let movie=localStorage.getItem("movie");
+  if(titledata == "" || imagedata=="" || ratingdata == ""){
+    alert("please fill the form!")
+     return;
+  }
+    let movie=localStorage.getItem("movie");
     if(movie==null){
         movieObj=[];
     }
@@ -79,7 +83,11 @@ function displayForm() {
     document.getElementById("title").value="";
     document.getElementById("image").value="";
     document.getElementById("rating").value="";
- }
+  }
+  // else{
+  //   alert("please fill the form");
+  // }
+ 
 
 
 
